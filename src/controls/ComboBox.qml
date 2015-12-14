@@ -608,9 +608,10 @@ Control {
                         modelData :
                           ((popup.modelIsArray ? modelData[popup.textRole] : model[popup.textRole]) || '')
                 onTriggered: {
-                    if (index !== currentIndex)
-                        activated(index)
+                    //if (index !== currentIndex)
+                        //activated(index)
                     comboBox.editText = text
+                    activated(index)
                 }
                 checkable: true
                 exclusiveGroup: eg
